@@ -33,3 +33,13 @@ Deploy web server with docker
 }
 
 >import conf.d/*.conf`
+3. create conf.d directory 
+`sudo mkdir conf.d`
+3.1 create configuration file for each domain or subdomain
+`sudo vi dashboard.conf`
+4. create directory for each website
+`sudo mkdir /var/www/dashboard`
+4.1 change own of directory 
+`sudo chown -R /var/www/dashboard`
+4.2 change directory mode for everyone can be read
+`sudo chmod -R 755 /var/www/dashboard`
