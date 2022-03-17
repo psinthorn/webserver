@@ -1,15 +1,6 @@
-# webserver
-Deploy web server with docker
+// copy this file to folder  /etc/caddy/ on server
 
-## How to deploy caddy web server
-1. install or run caddy 
-2. configurations
-2.1 backup Caddyfile to Caddyfile.dist
-`cd /etc/caddy
-sudo mv Caddyfile Caddyfile.dist`
-2.2 create new Caddyfile and configuration 
-`sudo vi Caddyfile`
-`{
+{
     email   psinthorn@gmail.com
 }
 
@@ -32,4 +23,4 @@ sudo mv Caddyfile Caddyfile.dist`
         }
 }
 
-import conf.d/*.conf`
+import conf.d/*.conf
