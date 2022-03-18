@@ -43,3 +43,12 @@ Deploy web server with docker
 `sudo chown -R /var/www/dashboard`
 4.2 change directory mode for everyone can be read
 `sudo chmod -R 755 /var/www/dashboard`
+
+## Regular Maintenance
+### update server
+`sudo apt update`
+`sudo apt upgrade`
+### automatic update security update
+`sudo apt install unattended-upgrades apt-listchanges`
+### update unattended 
+`sudo dpkg-reconfigure -plow unattended-upgrades`
